@@ -418,7 +418,7 @@ proc RandRemove() {local nmv,n,i,k,ms	localobj sub, r,V
 	if (verbosity > 2) printf("RandRemove: removing %d items from %s... \n", nmv, $o1)
 	
 	for n=0,nmv-1 {
-		if (V.x(n)>$o1.count())	k=$o1.count() else K=V.x(n)
+		if (V.x(n)>$o1.count())	k=$o1.count() else k=V.x(n)
 		if (numarg()>2) $o3.remove($o3.index($o1.o(k)))
 		$o1.remove(k)
 	}
