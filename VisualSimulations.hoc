@@ -558,8 +558,8 @@ proc adjsynswindow() {local mult, t1, t2	localobj tmplist, sub
 	mult = 0
 	tmplist = $o1
 	val = $5
-	t1 = $5
-	t2 = $5
+	t1 = $3
+	t2 = $4
 	if (numarg()>5) mult = $6
 	sub = new List()
 	
